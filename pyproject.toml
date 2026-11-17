@@ -1,0 +1,63 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "llm-text-detection"
+version = "0.2.0"
+description = "Detection of AI-generated text using pretrained BERT and custom MLP classification heads."
+readme = "README.md"
+requires-python = ">=3.9"
+license = { file = "LICENSE" }
+authors = [
+    { name = "NatalTiger26" }
+]
+keywords = [
+    "nlp",
+    "deep-learning",
+    "bert",
+    "transformers",
+    "llm-detection",
+    "ai-generated-text"
+]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Science/Research",
+    "License :: OSI Approved :: Apache Software License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Topic :: Scientific/Engineering :: Artificial Intelligence",
+    "Topic :: Text Processing :: Linguistic"
+]
+dependencies = [
+    "torch>=2.0.0",
+    "transformers>=4.30.0",
+    "pandas>=2.0.0",
+    "numpy>=1.24.0",
+    "scikit-learn>=1.2.0",
+    "matplotlib>=3.7.0",
+    "seaborn>=0.12.0",
+    "tqdm>=4.65.0",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=7.4.0",
+]
+
+[tool.pytest.ini_options]
+minversion = "7.0"
+addopts = "-ra -q"
+testpaths = ["tests"]
+pythonpath = ["."]
+
+[tool.ruff]
+line-length = 100
+target-version = "py310"
+
+[tool.ruff.lint]
+select = ["E", "F", "W", "I", "N", "UP", "B", "A", "C4"]
+ignore = ["E501"]

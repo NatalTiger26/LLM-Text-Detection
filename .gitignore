@@ -1,0 +1,27 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environments
+.venv/
+venv/
+ENV/
+env/
+
+# Testing & Coverage
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Jupyter Checkpoints
+.ipynb_checkpoints/
+
+# Operating System files
+.DS_Store
+Thumbs.db
+
+# Model Checkpoints & Outputs
+*.pth
+output.csv
+data.csv

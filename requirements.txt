@@ -1,0 +1,16 @@
+# Core Deep Learning & NLP Dependencies
+torch>=2.0.0
+transformers>=4.30.0
+
+# Data Processing & Numerical Computing
+pandas>=2.0.0
+numpy>=1.24.0
+scikit-learn>=1.2.0
+
+# Visualization & Progress Tracking
+matplotlib>=3.7.0
+seaborn>=0.12.0
+tqdm>=4.65.0
+
+# Testing & Development (optional)
+pytest>=7.4.0
